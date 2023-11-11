@@ -1,0 +1,470 @@
+@import url('https://fonts.googleapis.com/css2?family=Onest&display=swap');
+
+$black: #000000;
+$yellow: #f5b740;
+$pink: #e52e86;
+$blue: #1569ae;
+$green: #bfcc56;
+
+$text-light: rgb(219, 219, 219);
+$text-grey: rgb(203, 203, 203);
+
+$blue-50: tint-color($blue, 90%);
+
+$beige: #fef9f3;
+$rouge: #ea152c;
+$noir: #353537;
+$gris: #aaaecb;
+
+$rouge-50: #e7a3a8;
+$vert-50: #7cda85;
+
+$light: #dbdbdb;
+
+body {
+    font-family: 'Onest', sans-serif;
+    background-color: $beige;
+}
+
+.hover-bg-rouge:hover {
+    background-color: #eac0c3;
+}
+
+.hover-bg-noir:hover {
+    background-color: #ded0d1;
+}
+
+.text-rouge {
+    color: $rouge;
+}
+
+.text-black {
+    color: $black;
+}
+
+.text-yellow {
+    color: $yellow;
+}
+
+.text-pink {
+    color: $pink;
+}
+
+.text-blue {
+    color: $blue;
+}
+
+.text-green {
+    color: $green;
+}
+
+.bg-black {
+    background-color: $black;
+}
+
+.bg-yellow {
+    background-color: $yellow;
+}
+
+.bg-pink {
+    background-color: $pink;
+}
+
+.bg-blue {
+    background-color: $blue;
+}
+
+.bg-green {
+    background-color: $green;
+}
+
+.btn-yellow {
+    background-color: $yellow;
+}
+
+.btn-noir {
+    background-color: $noir;
+}
+
+.btn-blue {
+    background-color: $blue;
+}
+
+.btn-pink {
+    background-color: $pink;
+}
+
+.btn-black {
+    background-color: $black;
+}
+
+.btn-green {
+    background-color: $green;
+}
+
+.idea-card {
+    border-radius: 6px;
+    padding: 16px;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    border: solid 2px $light;
+    //background: linear-gradient(to right, #c4e8ff, #baffd1);
+    //background-color: white;
+}
+
+.idea-card-body {
+    font-size: 20px;
+    word-wrap: break-word;
+}
+
+.idea-card-footer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.idea-btn {
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+    cursor: pointer;
+    // color: $pink;
+    padding: 6px 16px;
+    border-radius: 1000px;
+}
+
+.idea-card-author {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: $text-grey;
+    font-size: 16px;
+}
+
+.ml-10 {
+    margin-left: 10px;
+}
+
+.my-0 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mt-0 {
+    margin-top: 0px;
+}
+
+.my-20 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.container-lg {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.container {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.mr-10 {
+    margin-right: 10px;
+}
+
+.btn {
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.90;
+}
+
+.btn-link {
+    font-size: 16px;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    padding: 0;
+}
+
+.btn-link:hover {
+    opacity: 0.90;
+}
+
+.force-lowercase {
+    min-height: 4em;
+    /* ou toute autre hauteur minimale souhaitée */
+}
+
+.idea-card-vote {
+    margin-top: 10px;
+    margin-bottom: 6px;
+    display: flex;
+    gap: 10px;
+}
+
+.idea-card-vote-block {
+    //border: solid 2px $noir;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    height: 60px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.idea-card-vote-block:hover {
+    opacity: 0.9;
+}
+
+.idea-card-vote-block-left,
+.idea-card-vote-block-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.idea-card-vote-block-left {
+    border-radius: 10px 0px 0px 10px;
+    background-color: $vert-50;
+}
+
+.idea-card-vote-block-right {
+    border-radius: 0px 10px 10px 0px;
+    background-color: $rouge-50;
+}
+
+.voted {
+    opacity: 0.5;
+}
+
+.voted .idea-card-vote-block {
+    cursor: auto;
+}
+
+.row {
+    display: flex;
+    gap: 10px;
+}
+
+.ideaComment-author {
+    color: grey;
+}
+
+.mt-6 {
+    margin-top: 6px;
+}
+
+.vote-info {
+    color: $text-grey;
+    margin-bottom: 10px;
+}
+
+.alert-danger {
+    background-color: $black;
+    color: white;
+}
+
+.form-control {
+    display: flex;
+    border-radius: 6px;
+    border: solid 2px;
+    border-color: grey;
+    font-size: 20px;
+    color: black;
+    padding: 6px;
+    outline: none;
+    width: 100%;
+}
+
+.is-invalid {
+    border: solid 2px rgb(215, 39, 39);
+}
+
+.invalid-feedback {
+    color: rgb(215, 39, 39);
+}
+
+.bg-red {
+    background-color: red;
+}
+
+.ml-20 {
+    margin-left: 20px;
+}
+
+.mr-6 {
+    margin-right: 6px;
+}
+
+.form-help {
+    color: grey;
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+.idea-btn-disabled {
+    color: rgb(228, 228, 228);
+    cursor: auto;
+}
+
+.h-100 {
+    height: 100%
+}
+
+table,
+caption,
+thead,
+tbody,
+tr,
+th,
+td {
+    border: solid 2px black;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.col {
+    flex: 1;
+}
+
+.col-lg {
+    flex: 1
+}
+
+.bg-light {
+    background-color: rgb(236, 236, 236);
+}
+
+.px-20 {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.py-20 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.p-10 {
+    padding: 10px;
+}
+
+.br-6 {
+    border-radius: 6px;
+}
+
+.border-bottom {
+    border-bottom: solid 2px black;
+}
+
+.container-card {
+    width: 60%;
+    margin: auto;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 94%;
+        left: 3%;
+        right: 3%;
+    }
+
+    .container-card {
+        width: 100%;
+        margin: auto;
+    }
+
+    .container-lg {
+        width: 95%;
+        margin: auto;
+    }
+
+    .container {
+        width: 95%;
+        margin: auto;
+    }
+}
+
+.ideaComment-gif {
+    border-radius: 10px;
+    height: 180px;
+}
+
+.ideaComment-gif-result {
+    border-radius: 10px;
+    height: 180px;
+    object-fit: cover;
+    cursor: pointer;
+    width: 100%;
+}
+
+.ideaComment-gif-result:hover {
+    opacity: 0.90;
+}
+
+.gap-10 {
+    gap: 10px;
+}
+
+.card-button {
+    cursor: pointer;
+}
+
+.card-button:hover {
+    opacity: 0.90;
+}
+
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.message {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.message h1 {
+    margin: 0;
+    color: $noir;
+}
+
+.message span {
+    color: #afafb5;
+}
+
+.form-control {
+    box-sizing: border-box;
+    background-color: transparent;
+    border: solid 2px $light;
+}
+
+.form-control:focus {
+    border-color: $noir;
+}
