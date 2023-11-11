@@ -48,15 +48,19 @@ function App() {
       cluster: 'eu',
     });
     var channel = pusher.subscribe('my-channel');
+    
     channel.bind('new-idea', function (data) {
       addIdea(data);
     });
+    
     channel.bind('new-ideaComment', function (data) {
       addCommentToIdea(data.idea.id, data)
     });
+    
     channel.bind('delete-ideaComment', function (data) {
       deleteCommentIdeaInIdea(data.ideaId, data.id);
     });
+    
     channel.bind('delete-idea', function (data) {
       deleteIdeaFromIdeas(data.id);
     });
@@ -103,6 +107,7 @@ function App() {
   const changeLike = (idea) => {
     setIdeas((prevIdeas) =>
       prevIdeas.map((item) => {
+        // Nous changeons le tableau de l'idée à savoir si l'utilisateur connecté a aimé.
         if (item.id === idea.id) {
           item.isLikedByUser = !item.isLikedByUser
           if (item.isLikedByUser == true) {
