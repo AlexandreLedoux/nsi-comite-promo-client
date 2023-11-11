@@ -154,7 +154,6 @@ function App() {
       });
 
       setIdeas(updatedIdeas);
-
       const data = {
         idea: '/api/ideas/' + idea.id,
         choice: choice
